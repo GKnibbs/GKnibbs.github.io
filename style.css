@@ -39,19 +39,41 @@ main {
   margin: 0 auto;
   padding-bottom: 4rem;
 }
-.project {
-  background-color: rgba(255, 255, 255, 0.03);
-  border-left: 3px solid #70D6FF;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  border-radius: 6px;
+.projects-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
 }
+
+.project {
+  flex: 0 1 200px; /* width limit, shrink when needed */
+  height: 320px;   /* taller boxes */
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #70D6FF;
+  border-radius: 8px;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+}
+
 .project h2 {
   margin-top: 0;
   color: #FFFFFF;
+  font-size: 1.1rem;
 }
+
 .project p {
   color: #D0D5DC;
+  font-size: 0.95rem;
 }
 
 /* Footer */
