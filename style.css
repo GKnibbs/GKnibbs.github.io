@@ -47,7 +47,7 @@ main {
   padding: 0rem 0;
 }
 
-.project {
+.project-for-row {
   flex: 0 1 200px; /* width limit, shrink when needed */
   height: 320px;   /* taller boxes */
   background-color: rgba(215, 96, 249, 0.37);
@@ -55,6 +55,27 @@ main {
   border-radius: 8px;
   padding: 1rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.project-for-grid {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #70D6FF;
+  border-radius: 8px;
+  padding: 1.2rem;
+  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -76,6 +97,7 @@ main {
   font-size: 0.95rem;
 }
 
+/* Mobile Device Adjustment */
 @media (max-width: 768px) {
   .projects-row {
     flex-direction: column;
