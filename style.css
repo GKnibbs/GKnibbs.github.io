@@ -76,6 +76,19 @@ main {
   font-size: 0.95rem;
 }
 
+@media (max-width: 768px) {
+  .projects-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%;
+    height: auto;
+  }
+}
+
+
 /* Footer */
 footer {
   text-align: center;
