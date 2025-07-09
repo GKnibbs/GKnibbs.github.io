@@ -9,6 +9,8 @@
 
     <!-- AOS Library (Animate on Scroll) -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- AOS script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,8 +33,18 @@
         </section>
     </main>
 
-    <footer>
+    <footer style="border-bottom-style: solid;border-bottom-width: 0px;margin-bottom: 10px;">
         <p>Contact: georgeknibbs16@email.com | GitHub: <a href="https://github.com/gknibbs">GKnibbs</a></p>
     </footer>
+
+    <script>
+        AOS.init({
+        duration: 800,       // animation speed (ms)
+        easing: 'ease-out',  // animation style
+        once: true,          // animate only once
+        delay: 0,            // no global delay
+        startEvent: 'DOMContentLoaded'  // trigger on full page load
+        });
+    </script>
 </body>
 </html>
