@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: #f9f9f9;
+  color: #333;
+}
+header, footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+h1 {
+  margin-bottom: 0.2rem;
+}
+a {
+  color: #0055aa;
+  text-decoration: none;
+}
