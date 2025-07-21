@@ -47,7 +47,7 @@
         const db = firebase.database();
         const counterRef = db.ref("views");
 
-        counterRef.transaction(current => (current || 0) + 1);
+        counterRef.transaction(current => (current || 0) + 2);
         counterRef.on("value", snapshot => {
             document.getElementById("count").innerText = snapshot.val();
         });
