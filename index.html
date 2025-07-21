@@ -25,11 +25,11 @@
         <div class="scroll-indicator">▼</div>
     </header>
     <!-- Section for Displaying Visitor Count -->
-    <div class="visitor-section">
+    <!-- <div class="visitor-section">
         <p>This page has been viewed:</p>
         <div id="count">...</div>
         <p>times</p>
-    </div>
+    </div> -->
     <!-- Connecting to Firebase Database -->
     <!-- Find Below Infomration in Firebase Apps In Account-->
     <script>
@@ -47,7 +47,7 @@
         const db = firebase.database();
         const counterRef = db.ref("views");
 
-        counterRef.transaction(current => (current || 0) + 2);
+        counterRef.transaction(current => (current || 0) + 1);
         counterRef.on("value", snapshot => {
             document.getElementById("count").innerText = snapshot.val();
         });
