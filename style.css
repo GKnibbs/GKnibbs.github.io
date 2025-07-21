@@ -104,7 +104,7 @@ main {
     align-items: center;
   }
 
-  .project {
+  .project-for-row {
     width: 90%;
     height: auto;
   }
@@ -135,4 +135,36 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Visitor Counter Graphics */
+.visitor-section {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.counter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2a9d8f;
+}
+
+/* Visitor Counter Graphics - Mobile */
+@media (max-width: 600px) {
+  .visitor-section {
+    padding: 1rem;
+  }
+
+  .visitor-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .counter {
+    font-size: 2rem;
+  }
+
+  .visitor-section p {
+    font-size: 1rem;
+  }
 }
