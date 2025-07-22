@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Counting Viewer
     counterRef.transaction(current => (current || 0) + 1);
     counterRef.on("value", snapshot => {
-        document.getElementById("count").innerText = snapshot.val();
+        const countE1 = document.getElementById("count").innerText = snapshot.val();
         if (countEl) {
-        countEl.innerText = snapshot.val();
+            countEl.innerText = snapshot.val();
         }
     });
 
