@@ -25,6 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Logging the Timestamp of Each Visit
-    const logsRef = db.ref("view_logs");
+    const logsRef = firebase.database().ref("view_logs");
     logsRef.push(new Date().toISOString());
 });
