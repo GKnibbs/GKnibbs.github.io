@@ -6,12 +6,11 @@
     <title>George | Robotics Engineer</title>
     <!-- Font: Courier Prime (Google Fonts) -->
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
-
     <!-- AOS Library (Animate on Scroll) -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- AOS script -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <!-- Firebase Database Visitor Counter Scripts -->
+    <!-- Firebase Database Visitor Counter SDKs -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <!-- Linking to CSS for Styling -->
@@ -24,34 +23,6 @@
         <p>Autonomy • Control Systems • Embedded Design</p>
         <div class="scroll-indicator">▼</div>
     </header>
-    <!-- Section for Displaying Visitor Count -->
-    <!-- <div class="visitor-section">
-        <p>This page has been viewed:</p>
-        <div id="count">...</div>
-        <p>times</p>
-    </div> -->
-    <!-- Connecting to Firebase Database -->
-    <!-- Find Below Infomration in Firebase Apps In Account-->
-    <script>
-        const firebaseConfig = { 
-            apiKey: "AIzaSyAivz05g9HVxOq0QPd8RPZbJIK4qjPQ6jE",
-            authDomain: "website-visitor-counter-d2b13.firebaseapp.com",
-            databaseURL: "https://website-visitor-counter-d2b13-default-rtdb.europe-west1.firebasedatabase.app",
-            projectId: "website-visitor-counter-d2b13",
-            storageBucket: "website-visitor-counter-d2b13.firebasestorage.app",
-            messagingSenderId: "64299652159",
-            appId: "1:64299652159:web:a850132178c989c04cd48a"
-        };
-
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.database();
-        const counterRef = db.ref("views");
-
-        counterRef.transaction(current => (current || 0) + 1);
-        counterRef.on("value", snapshot => {
-            document.getElementById("count").innerText = snapshot.val();
-        });
-    </script>
     <!-- Main Webpage Body -->
     <main>
         <section>
@@ -96,5 +67,8 @@
         startEvent: 'DOMContentLoaded'  // trigger on full page load
         });
     </script>
+
+    <!-- View Counter Script Call -->
+    <script src="script/firebase.js"></script>
 </body>
 </html>
