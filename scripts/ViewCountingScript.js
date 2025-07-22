@@ -20,4 +20,4 @@ counterRef.on("value", snapshot => {
 
 // Logging the Timestamp of Each Visit
 const logsRef = db.ref("view_logs");
-logsRef.push(new DataTransfer().toISOString());
+logsRef.push(new Date().toISOString());
