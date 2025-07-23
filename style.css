@@ -80,11 +80,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: height 1s ease 1s;
 }
 
 .project-for-grid:hover {
-  height: 280px; 
+  height: 280px;
+  transition: height 1s ease 1s; 
 }
 
 .project:hover {
