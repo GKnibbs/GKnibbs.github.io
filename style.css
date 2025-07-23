@@ -79,7 +79,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 1s ease;
+  transition: 0.1s ease;
+}
+
+.project-for-grid:hover {
+  height: 350px; 
 }
 
 .project:hover {
