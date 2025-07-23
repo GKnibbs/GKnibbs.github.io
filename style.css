@@ -79,11 +79,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.1s ease;
+  transition: transform 1s ease;
 }
 
 .project:hover {
-  transform: translateY(-4px);
+  transform: translateY(-10px);
 }
 
 .project h2 {
