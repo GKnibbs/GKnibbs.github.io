@@ -80,7 +80,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 0.5s ease;
+  transition: 1s ease-in-out;
 }
 
 .project-for-grid:hover {
